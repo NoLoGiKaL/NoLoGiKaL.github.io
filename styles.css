@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.circle {
+  width: 200px; /* Размер круга */
+  height: 200px; /* Размер круга */
+  border: 2px solid #3498db; /* Граница круга */
+  border-radius: 50%; /* Делаем круглым */
+  position: relative;
+}
+
+.data-block {
+  width: 30px; /* Размер блоков с данными */
+  height: 30px; /* Размер блоков с данными */
+  background-color: #e74c3c; /* Цвет блоков */
+  border-radius: 50%; /* Делаем блоки круглыми */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Позиционируем блоки вдоль окружности (пример для 8 блоков) */
+.data-block:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.data-block:nth-child(2) {
+  top: 15%;
+  left: 85%;
+  transform: translateX(-50%);
+}
+
+.data-block:nth-child(3) {
+  top: 50%;
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+/* Продолжайте добавлять стили для других блоков */
